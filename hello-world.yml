@@ -1,4 +1,4 @@
 template: Hello, %s!
-defaultName: Stranger
+defaultName: Axe Finance
 server:
   rootPath: /api/
