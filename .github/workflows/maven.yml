@@ -20,7 +20,13 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: Build with Maven
+    - name: Compiling the application
+      run: mvn compile
+    - name: Run the Unit Tests of the application
+      run: mvn test
+    - name: Package the compiled classes
       run: mvn -B package --file pom.xml
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+    - name: Run the Integration Tests
+      run: mvn verify
+    - name: Installing the application in the target folder
+      run: mvn install
