@@ -19,6 +19,9 @@ jobs:
        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
 
+    - name: Package the application
+      run: mvn -B package --file pom.xml
+      
     - name: Build the new release :latest
       run: docker build -t hosniah/kascade:latest .
 
