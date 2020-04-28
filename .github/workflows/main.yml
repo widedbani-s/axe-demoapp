@@ -1,5 +1,3 @@
-# This is a basic workflow to help us build the demoapp docker image and publish it
-
 name: CD pipeline
 
 on:
