@@ -1,4 +1,4 @@
 template: Hello, %s!
-defaultName: Axe Finance
+defaultName: Sofrecom
 server:
   rootPath: /api/
