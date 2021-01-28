@@ -21,10 +21,10 @@ jobs:
       run: mvn -B package --file pom.xml
       
     - name: Build the new release :latest
-      run: docker build -t hosniah/kascade:latest .
+      run: docker build -t hosniah/orsys-ccb:latest .
 
     - name: Push to docker hub :latest
       uses: actions-hub/docker@master
       with:
-       args: push hosniah/kascade:latest
+       args: push hosniah/orsys-ccb:latest
  
