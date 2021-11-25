@@ -23,5 +23,5 @@ jobs:
     - name: Push to docker hub :latest
       uses: actions-hub/docker@master
       with:
-       args: push hosniah/orsys-ccb:latest
+       args: push hosniah/orsys-ccb:3.0
  
