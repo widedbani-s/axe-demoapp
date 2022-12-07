@@ -18,7 +18,7 @@ jobs:
        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
       
     - name: Build the new release :latest
-      run: docker build -t hosniah/orsys-ccb:6.0 .
+      run: docker build -t hosniah/orsys-ccb:5.0 .
 
     - name: Push to docker hub :latest
       uses: actions-hub/docker@master
