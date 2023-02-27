@@ -1,4 +1,4 @@
 template: Hello, %s!
 defaultName: Sofrecom CKAD candidates!
-server:
+server: 
   rootPath: /api/
