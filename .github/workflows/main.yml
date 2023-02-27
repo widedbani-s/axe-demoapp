@@ -18,10 +18,10 @@ jobs:
        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
       
     - name: Build the new release :latest
-      run: docker build -t hosniah/assurances-app:2.1.0 .
+      run: docker build -t hosniah/assurances-app:2.2.0 .
 
     - name: Push to docker hub :latest
       uses: actions-hub/docker@master
       with:
-       args: push hosniah/assurances-app:2.1.0
+       args: push hosniah/assurances-app:2.2.0
  
