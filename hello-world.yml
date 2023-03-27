@@ -1,4 +1,4 @@
 template: Hello, %s!
-defaultName: Sofrecom CKAD candidates!
+defaultName: M2I Formation!
 server: 
   rootPath: /api/
